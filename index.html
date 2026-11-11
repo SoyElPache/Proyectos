@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Calculadora">
+    <div class="screen">
+      <div id="history" class="history" aria-live="polite"></div>
+      <div id="display" class="display" aria-live="polite">0</div>
+    </div>
+
+    <div class="keys">
+      <button data-action="clear" class="key key--fn">AC</button>
+      <button data-action="backspace" class="key key--fn" aria-label="Borrar">⌫</button>
+      <button data-action="percent" class="key key--fn">%</button>
+      <button data-action="operator" data-value="/" class="key key--op">÷</button>
+
+      <button data-action="digit" data-value="7" class="key">7</button>
+      <button data-action="digit" data-value="8" class="key">8</button>
+      <button data-action="digit" data-value="9" class="key">9</button>
+      <button data-action="operator" data-value="*" class="key key--op">×</button>
+
+      <button data-action="digit" data-value="4" class="key">4</button>
+      <button data-action="digit" data-value="5" class="key">5</button>
+      <button data-action="digit" data-value="6" class="key">6</button>
+      <button data-action="operator" data-value="-" class="key key--op">−</button>
+
+      <button data-action="digit" data-value="1" class="key">1</button>
+      <button data-action="digit" data-value="2" class="key">2</button>
+      <button data-action="digit" data-value="3" class="key">3</button>
+      <button data-action="operator" data-value="+" class="key key--op">+</button>
+
+      <button data-action="sign" class="key key--fn">±</button>
+      <button data-action="digit" data-value="0" class="key">0</button>
+      <button data-action="decimal" class="key">.</button>
+      <button data-action="equals" class="key key--eq">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
