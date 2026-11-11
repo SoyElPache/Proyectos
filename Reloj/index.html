@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reloj digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="clock">
+    <!-- Hora grande. JavaScript la actualiza cada segundo -->
+    <div id="time" class="clock__time" aria-live="off">--:--:--</div>
+
+    <!-- Fecha completa (día de la semana, día, mes y año) -->
+    <div id="date" class="clock__date">Cargando...</div>
+
+    <!-- Controles: zona horaria y formato de 12/24 horas -->
+    <div class="clock__controls">
+      <label for="timezone" class="clock__label">Zona horaria</label>
+      <!-- Las opciones se llenan desde script.js -->
+      <select id="timezone" class="clock__select"></select>
+
+      <!-- El texto del botón cambia entre "24 h" y "12 h" -->
+      <button id="format-btn" class="clock__button" type="button">24 h</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
